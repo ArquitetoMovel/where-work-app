@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhereWork - Controle seu local de trabalho</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin: 40px 0;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin: 30px 0 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .feature-section {
+            margin: 40px 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .feature-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .image-grid .feature-item {
+            text-align: center;
+        }
+
+        .image-grid img {
+            max-width: 90%;
+            display: block;
+            margin: 10px auto;
+            background: #f8f9fa;
+            padding: 15px;
+        }
+
+        .hero-section {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(to right, #3498db11, #2ecc7111);
+            border-radius: 15px;
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .hero-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero-section p {
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .dark-mode-preview {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .dark-mode-preview img {
+            background: #1a1a1a;
+            border: 1px solid #333;
+        }
+
+        .config-image, .status-image {
+            max-width: 30%;
+            display: block;
+            margin: 10px auto;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        ul {
+            padding-left: 25px;
+            margin: 15px 0;
+            list-style: none;
+        }
+
+        li {
+            margin: 12px 0;
+            position: relative;
+            padding-left: 28px;
+        }
+
+        li:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: #3498db;
+            border-radius: 50%;
+        }
+
+        li:after {
+            content: "→";
+            color: white;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <h1>Bem-vindos ao <strong>WhereWork</strong></h1>
+        <p>Um aplicativo desenvolvido para auxiliar no controle do local de trabalho, permitindo o planejamento com base nos dias do mês.</p>
+    </div>
+
+    <section class="feature-section">
+        <h2>Configurações Iniciais</h2>
+        <div class="feature-item">
+            <img src="1. WhereWork_App_1st_config.png" alt="Tela de configurações iniciais" class="config-image">
+            <p>Ao iniciar o aplicativo pela primeira vez, você pode:</p>
+            <br>
+            <ul>
+                <li>Definir metas para dias presenciais (percentual ou número de dias)</li>
+                <li>Personalizar feriados municipais</li>
+                <li>Configurar a interface conforme sua preferência</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <h2>Interface Principal</h2>
+        <div class="image-grid">
+            <div class="feature-item">
+                <img src="2. WhereWork_App_Home.png" alt="Tela inicial Home">
+                <p>Visualize todos os meses do ano atual com fácil acesso aos registros</p>
+            </div>
+            <div class="feature-item">
+                <img src="9. WhereWork_App_DarkMode_HConfig.png" alt="Modo escuro">
+                <p>Suporte completo ao modo escuro</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <h2>Gerenciamento de Status</h2>
+        <div class="feature-item">
+            <img src="3. WhereWork_App_Status.png" alt="Página de Status Mensal" class="status-image">
+            <p>Acompanhe seus registros mensais com uma visualização clara e objetiva:</p>
+            <ul>
+                <li>Visualize dias registrados</li>
+                <li>Acompanhe totalizadores mensais</li>
+                <li>Acesse rapidamente a aba de registros</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <h2>Registros Flexíveis</h2>
+        <div class="image-grid">
+            <div class="feature-item">
+                <img src="5a. WhereWork_App_RegisterHome.png" alt="Registro de Trabalho Remoto">
+                <p>Registre trabalho remoto</p>
+            </div>
+            <div class="feature-item">
+                <img src="5b. WhereWork_App_RegisterOffice.png" alt="Registro de Trabalho Presencial">
+                <p>Marque dias presenciais no escritório</p>
+            </div>
+            <div class="feature-item">
+                <img src="8. WhereWork_App_DarkMode_RegisterVacation.png" alt="Registro de Folga">
+                <p>Planeje suas férias e folgas</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <h2>Compatibilidade com iPad</h2>
+        <div class="feature-item">
+            <img src="11. WhereWork_App_iPad_DarkMode_Home.png" alt="Versão iPad">
+            <p>Interface otimizada para iPad, mantendo todas as funcionalidades em uma experiência adaptada para telas maiores.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>WhereWork - Organize seu trabalho híbrido de forma inteligente</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.feature-section, .hero-section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Desativa a observação após o elemento ter aparecido
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2, // O elemento será animado quando 20% dele estiver visível
+                rootMargin: '0px 0px -50px 0px' // Ajusta a margem de detecção
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Adiciona classe visible para a primeira seção imediatamente
+            const heroSection = document.querySelector('.hero-section');
+            if (heroSection) {
+                setTimeout(() => {
+                    heroSection.classList.add('visible');
+                }, 100);
+            }
+        });
+    </script>
+</body>
+</html>

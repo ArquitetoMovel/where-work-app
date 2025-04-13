@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "5d94e620937797e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "40f801c8a0a20f62",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "be7a5a52d8248841",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Where Work App.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Where Work App"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a7bf1930a582872a",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc713ce03fefaa2f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a0c94d37c3e9541",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "e7dedc91a852e7fa",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "89952052167f3de0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 522.5
+  },
+  "right": {
+    "id": "f7aa56d78269bac4",
+    "type": "split",
+    "children": [
+      {
+        "id": "31bf2431a699328e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bfa107aef1cd85d6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Where Work App.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Where Work App"
+            }
+          },
+          {
+            "id": "45df7d1c61a300fd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Where Work App.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Where Work App"
+            }
+          },
+          {
+            "id": "6e77a49fba52e677",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "6d37db7d3d42087a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Where Work App.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Where Work App"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "be7a5a52d8248841",
+  "lastOpenFiles": [
+    "index.html",
+    "10. WhereWork_App_DarkMode_Config.png",
+    "Where Work App.md",
+    "11. WhereWork_App_iPad_DarkMode_Home.png",
+    "8. WhereWork_App_DarkMode_RegisterVacation.png",
+    "9. WhereWork_App_DarkMode_HConfig.png",
+    "5b. WhereWork_App_RegisterOffice.png",
+    "5c. WhereWork_App_RegisterLocalHoliday.png",
+    "6. WhereWork_App_RegisterEdit.png"
+  ]
+}
