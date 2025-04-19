@@ -283,6 +283,38 @@
             border-radius: 12px;
             box-shadow: 0 8px 24px rgba(0,0,0,0.2);
         }
+
+        .app-store-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .app-store-link {
+            display: block;
+            width: 140px;
+            height: auto;
+            transition: opacity 0.3s ease;
+        }
+
+        .app-store-link:hover {
+            opacity: 0.8;
+        }
+
+        .video-container {
+            width: 80%;
+            margin: 0 auto;
+            height: auto;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
     </style>
 </head>
 <body>
@@ -297,11 +329,17 @@
             <h1 class="app-title">Você no controle todo mês</h1>
         </div>
         <p>Um aplicativo desenvolvido para auxiliar no controle do local de trabalho, permitindo o planejamento com base nos dias do mês.</p>
+        <p>Se você está trabalhando em modelo hibrido ou semipresencial, o <b>WhereWork</b> irá te ajudar a calcular o numero de dias em cada local de trabalho.</p>
     </div>
 
     <section class="feature-section">
-        <div class="feature-item">
+        <div class="feature-item"> 
             <img src="WhereWork_App_iPad_DarkMode_Home.png" alt="WhereWork no iPad - Modo Escuro">
+            <div class="app-store-container">
+                <a href="https://apps.apple.com/us/app/wherework/id6743660074?itscg=30200&itsct=apps_box_link&mttnsubad=6743660074" class="app-store-link">
+                    <img src="logo-app-storeblack.svg" alt="Download na App Store">
+                </a>
+            </div>
         </div>
     </section>
 
@@ -309,11 +347,21 @@
         <h2>Interface Principal</h2>
         <div class="image-grid">
             <div class="feature-item">
-                <img src="2. WhereWork_App_Home.png" alt="Tela inicial Home">
+                <br />
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="WhereWork_home_white.mov" type="video/mp4">
+                    </video>
+                </div>
                 <p>Visualize todos os meses do ano atual com fácil acesso aos registros</p>
             </div>
             <div class="feature-item">
-                <img src="9. WhereWork_App_DarkMode_HConfig.png" alt="Modo escuro">
+                <br />
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="WhereWork_home_black.mov" type="video/mp4">
+                    </video>
+                </div>
                 <p>Suporte completo ao modo escuro</p>
             </div>
         </div>
@@ -383,6 +431,11 @@
         <div class="feature-item">
             <img src="11. WhereWork_App_iPad_DarkMode_Home.png" alt="Versão iPad">
             <p>Interface otimizada para iPad, mantendo todas as funcionalidades em uma experiência adaptada para telas maiores.</p>
+            <div class="app-store-container">
+                <a href="https://apps.apple.com/us/app/wherework/id6743660074?itscg=30200&itsct=apps_box_link&mttnsubad=6743660074" class="app-store-link">
+                    <img src="logo-app-storeblack.svg" alt="Download na App Store">
+                </a>
+            </div>
         </div>
     </section>
 
